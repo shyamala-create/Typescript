@@ -1,0 +1,133 @@
+class circle{
+    static pi=3.14;
+    static calculatearea(radius:number){
+        return circle.pi*radius *radius;
+    }
+    calculatecircumference(radius:number):number{
+        return 2*circle.pi*radius;
+    }
+}
+circle.calculatearea(5);
+
+let circleobj=new circle();  //new will get 1 byte of memory
+console.log(circleobj.calculatecircumference(5))
+
+class employee
+{
+    public name;mailid;mobno;
+ // name="Ram"
+  static address="Btm"
+  constructor(name:string,mailid:string,mobno:number)
+  {
+     this.name=name
+     this.mailid=mailid
+     this.mobno=mobno
+  }
+  static addr()
+  {
+    console.log(employee.address)
+  }
+  display()
+  {
+     console.log(this.name)
+     console.log(this.mailid)
+     console.log(this.mobno)
+  }
+  set(a:any)
+  {
+     this.name=a
+    
+  }
+}
+var k=new employee("Ajay", "ajay@gmail.com",859350584)
+//k.display()
+k.set("Arithra")
+k.display()
+employee.addr()
+
+class company
+{ 
+    public Company_name; Designation; Salary;
+      //Company_name = "JVT"
+      //Designation="Programmer"
+      //Salary ="2.3 or 230000"
+      static Location =" Bangalore"
+      constructor(Company_name:string, Designation:string, Salary:string){
+           this.Company_name=Company_name
+           this.Designation=Designation
+           this.Salary =Salary
+           }
+           static company1()
+           {
+              console.log(company.Location)
+              }
+           display()
+           {
+              console.log(this.Company_name)
+              console.log(this.Designation)
+              console.log(this.Salary)
+              }
+              set(a:any)
+              {
+              this.Company_name=a
+              }
+   }
+   var jvt=new company("JVT", "Programmer", "2.3 or 230000")
+   jvt.set("shyam")
+   jvt.display()
+   company.company1()
+
+class data
+{
+  public name;web;mobno;
+  static address="jaipur"
+  constructor(name:string,web:string,mobno:number)
+  {
+      this.name=name
+     this.web=web
+     this.mobno=mobno
+  }
+  static addr()
+  {
+    console.log(data.address)
+  }
+  display()
+  {
+     console.log(this.name)
+     console.log(this.web)
+     console.log(this.mobno)
+  }
+  set(a:any)
+  {
+     this.name=a
+  }
+}
+var k=new employee("shyamala","www.intime.com",8593657465)
+//k.display()
+k.set("intime")
+k.display();
+
+class company1{
+    public emp_name; designation; years;
+    static namee="Intime"
+    constructor(emp_name:string, designation:string, years:string)
+    {
+        this.emp_name=emp_name;
+        this.designation=designation;
+        this.years=years;
+    }
+    static company_name()
+    {
+        console.log(company1.namee)
+    }
+    display()
+    {
+        console.log(this.emp_name)
+        console.log(this.designation)
+        console.log(this.years)
+    }
+}
+let init=new company("vinit", "software_engineer", "3years")
+company1.company_name();
+init.display();
+
