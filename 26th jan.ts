@@ -460,5 +460,55 @@ let tec=new tech("Jai Venkateswara Technologies", "B TECH MCA MBA BSC MSC","2/6/
 tec.display();
 
 
-
+class system_properties{
+    Rating:string;
+    Processor:string;
+    Installed_Memory_RAM:string;
+    System_Type:string;
+    Pen_Touch:string;
+    Computer_Name:string;
+    Computer_Description:string;
+    Windows_Edition:string;
+    constructor(Rating:string,Processor:string,Installed_Memory_RAM:string,System_Type:string,Pen_Touch:string,Computer_Name:string,Computer_Description:string ,Windows_Edition:string)
+    {
+    this.Rating = "4.5"
+    this.Processor = "Intel® Core™ i5-2450 CPU"
+    this.Installed_Memory_RAM= "4.00GB"
+    this.System_Type = "64-bit Operating System"
+    this.Pen_Touch = "No Pen or Touch Input is available for this Display"
+    this.Computer_Name = "BALU-PC"
+    this.Computer_Description = "WORKGROUP"
+    this.Windows_Edition =" Windows7Ultimate"
+    }
+    display =() => console.log(this.Rating +' '+this.Processor +' '+this.Installed_Memory_RAM +' '+this.System_Type +' '+this.Pen_Touch +' '+this.Computer_Name +' '+this.Computer_Description +' '+this.Windows_Edition)
+}
+let system = new system_properties("4.5","Intel® Core™ i5-2450 CPU","4.00GB","64-bit Operating System","No Pen or Touch Input is available for this Display","BALU-PC","WORKGROUP"," Windows7Ultimate");
+system.display();
 =====================================================================================================================================
+  
+  ////Function_overloading
+  
+  function add(a:string, b:string):string;
+
+function add(a:number, b:number): number;
+
+function add(a: any, b:any): any {
+    return a + b;
+}
+
+add("Hello ", "Steve"); // returns "Hello Steve" 
+add(10, 20); // returns 30 
+
+///////////////////////////////////////////////////////////////////////
+
+function sum(name:string, roll_no:number):string;
+
+function sum(name:number,roll_no:string):number;
+
+function sum(name:any, roll_no:any):any{
+    return name + roll_no;
+}
+sum("shyamala", 45);
+sum(34, "78");
+========================================================================================================================================
+  
