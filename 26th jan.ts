@@ -1,3 +1,8 @@
+                     learning:Typescript classes, static function, inheritence, javascript
+                     challenges: got some error in inheritence
+                     working hours: 6hrs
+                     lines of code: 500+ lines of code
+=========================================================================================================================================
 class bank1
 {
    public creditcard;minimum;outstand;
@@ -407,3 +412,53 @@ var Vehicle_information = /** @class */ (function () {
 var bmw = new Vehicle_information("light motor", "red", "kp98gtyihh457797 ", "tc5678898335r45", "BMW");
 bmw.display();
 ====================================================================================================================================
+//Arrow functions
+   
+   class Employee {
+    empCode: number;
+    empName: string;
+
+    constructor(code: number, name: string) {
+        this.empName = name;
+        this.empCode = code;
+    }
+
+    display = () => console.log(this.empCode +' ' + this.empName)
+}
+let emp = new Employee(1, 'Ram');
+emp.display();
+
+class tech{
+    Name :string="Jai Venkateswara Technologies"
+    EducationalQualification:string="B TECH MCA MBA BSC MSC"
+    DateOfBirth :string="2/6/1988"
+    CommunicationAddress:string="233/3 Ground floor new thippasandra"
+    Residence:string="08025216666"
+    Mobile :number=9900367097
+    Email:string="venkatesh.db@gmail.com"
+    TotalExp:string="1 years"
+    Skill:string="C,CPP all Lang  & 1 years"
+    ReportingManager:string ="Venkatesh"
+    PANCARD:string ="asu675901f"
+    constructor(Name :string,EducationalQualification:string, DateOfBirth :string,CommunicationAddress:string,Residence:string,Mobile :number,Email:string,TotalExp:string,Skill:string,ReportingManager:string, PANCARD:string)
+    {
+    this.Name ="Jai Venkateswara Technologies";
+    this.EducationalQualification="B TECH MCA MBA BSC MSC";
+    this.DateOfBirth ="2/6/1988";
+    this.CommunicationAddress="233/3 Ground floor new thippasandra";
+    this.Residence="08025216666";
+    this.Mobile =9900367097;
+    this.Email="venkatesh.db@gmail.com";
+    this.TotalExp="1 years";
+    this.Skill="C,CPP all Lang  & 1 years";
+    this.ReportingManager ="Venkatesh";
+    this.PANCARD ="asu675901f";
+    }
+    display=() => console.log(this.Name +' '+this.EducationalQualification+' '+ this.DateOfBirth+' '+ this.CommunicationAddress+' '+ this.Residence +' '+this.Mobile+' '+ this.Email +' '+this.TotalExp +' '+this.Skill +' '+this.ReportingManager+' '+ this.PANCARD)
+}
+let tec=new tech("Jai Venkateswara Technologies", "B TECH MCA MBA BSC MSC","2/6/1988","233/3 Ground floor new thippasandra","08025216666",9900367097,"venkatesh.db@gmail.com","1 years","C,CPP all Lang  & 1 years", "Venkatesh","asu675901f");
+tec.display();
+
+
+
+=====================================================================================================================================
