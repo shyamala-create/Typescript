@@ -1,4 +1,4 @@
-                     learning:Typescript classes, static function, inheritence, javascript
+                     learning:Typescript classes, static function, function_overloading, inheritence, javascript
                      challenges: got some error in inheritence
                      working hours: 6hrs
                      lines of code: 500+ lines of code
