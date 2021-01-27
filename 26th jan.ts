@@ -1,4 +1,4 @@
-                     learning:Typescript classes, static function, function_overloading, inheritence, javascript
+                     learning:Typescript classes, static function, function_overloading, encapsulation, inheritence, javascript
                      challenges: got some error in inheritence
                      working hours: 6hrs
                      lines of code: 500+ lines of code
@@ -511,4 +511,111 @@ function sum(name:any, roll_no:any):any{
 sum("shyamala", 45);
 sum(34, "78");
 ========================================================================================================================================
+  ///Encapsulation
   
+  class Greeeter{
+    private greeting:string;
+    constructor(message:string){
+        this.greeting=message;
+    }
+    public greet():number{
+        return 23
+       // return "hello,"+ this.greeting;
+    }
+}
+let ret = new Greeeter("world");
+//let ret=greeter.greet()
+console.log(ret)
+
+class greetings{
+    private message : string;
+    constructor(msg:string){
+        this.message=msg;
+    }
+    display()
+    {
+        console.log(this.message)
+    }
+}
+let newyear = new greetings("wish to 2021");
+newyear.display();
+
+class commpany{
+    private name:string;
+    constructor(name:string){
+        this.name=name;
+    }
+    display()
+    {
+        console.log(this.name)
+    }
+}
+let empr=new commpany("shyamala");
+empr.display();
+
+class theater{
+private Theatre_name;multiplex_Screen;movie_certification;first_price_per_ticket;Number_of_tickets;seat_numbers;Total_amount
+            constructor(Theatre_name:string,multiplex_Screen:string,movie_certification:string, first_price_per_ticket:string ,Number_of_tickets:string,seat_numbers:string,Total_amount:string){
+            this.Theatre_name= "PSS" 
+            this.multiplex_Screen = "screen 3" 
+            this.movie_certification = "U class " 
+            this.first_price_per_ticket =" Rs.1050.00 "
+            this.Number_of_tickets = "5 "
+            this.seat_numbers ="c1,c2,c3,c4,c5" 
+            this.Total_amount ="Rs.750.00"
+            }
+            display()
+            {
+            console.log(this.Theatre_name,this.multiplex_Screen,this.movie_certification,this.first_price_per_ticket,this.seat_numbers, this.Total_amount)
+            }
+            }
+            var plex= new Moviee("PSS","screen 3","U class "," Rs.1050.00 ","5 ","c1,c2,c3,c4,c5" ,"Rs.750.00")
+            plex.display()
+
+            class Google_Account{
+                private First_Name;Last_Name;Choose_Username;Creat_a_Password;Confirm_Your_Password;Birthday;Gender;Mobile;Your_current_email_address
+                constructor(First_Name:string,Last_Name:string,Choose_Username:string,Creat_a_Password:string,Confirm_Your_Password:string,Birthday:string,Gender:string,Mobile:number ,Your_current_email_address:string){
+                this.First_Name = "venkatesh"
+                this.Last_Name = "d b"
+                this.Choose_Username ="jvt"
+                this.Creat_a_Password =" balu"
+                this.Confirm_Your_Password =" balu"
+                this.Birthday ="2-6-1986"
+                this.Gender =" male"
+                this.Mobile = 9900367097
+                this.Your_current_email_address ="venkatesh.db@gmail.com"
+                }
+                display()
+                {
+                console.log(this.First_Name,this.Last_Name,this.Choose_Username ,this.Creat_a_Password,this.Confirm_Your_Password,this.Birthday,this.Gender,this.Mobile,this.Your_current_email_address)
+                }
+                }
+                var google=new Google_Account("venkatesh","d b","jvt"," balu"," balu","2-6-1986"," male",9900367097,"venkatesh.db@gmail.com")
+                google.display()
+
+
+class Banking_statement{
+                    private Bank_Name;Date;Time;ATM_No;CARD_No;BRANCH_NAME;Txn_No;Response_code;With_Drawl;From_AC;Mod_RS;Available_Bal_Rs;Website;
+                    constructor(Bank_Name:string,Date:string,Time:string,ATM_No:string,CARD_No:string,BRANCH_NAME:string,Txn_No:string,Response_code:string,With_Drawl:string,From_AC:string,Mod_RS:string,Available_Bal_Rs:string,Website:string){
+                    this.Bank_Name="SBI Bank"
+                    this.Date=" 29/05/14"
+                    this.Time=" 19:48"
+                    this.ATM_No = "SJNBL48"
+                    this.CARD_No=" xxxx xxxxx xxxx 0516"
+                    this.BRANCH_NAME="Bangalore Main Branch"
+                    this.Txn_No ="2907"
+                    this.Response_code = "072"
+                    this.With_Drawl ="500.00"
+                    this.From_AC =" xxxxxxxxxx05 xx01"
+                    this.Mod_RS =" 0.00"
+                    this.Available_Bal_Rs=" 1000.00"
+                    this.Website =" www.statebankof india.co"
+                    }
+                    display()
+                    {
+                    console.log(this.Bank_Name,this.BRANCH_NAME)
+                    }
+                    }
+                    var shaaaa=new Banking_statement("SBI Bank"," 29/05/14"," 19:48","SJNBL48"," xxxx xxxxx xxxx 0516","Bangalore Main Branch","2907","072","500.00"," xxxxxxxxxx05 xx01", " 0.00", " 1000.00"," www.statebankof india.co")
+                    shaaaa.display()
+======================================================================================================================================================
